@@ -1,0 +1,60 @@
+➜  ui git:(main) pnpm dlx storybook init
+╭──────────────────────────────────────────────────────╮
+│                                                      │
+│   Adding Storybook version 8.2.2 to your project..   │
+│                                                      │
+╰──────────────────────────────────────────────────────╯
+ • Detecting project type. ✓
+Installing dependencies...
+
+Scope: all 5 workspace projects
+
+devDependencies:
++ @repo/eslint-config 0.0.0 <- ../config-eslint
++ svelte 4.2.12
+
+Done in 567ms
+✔
+We were not able to detect the right builder for your project. Please select one: › Vite
+
+  ✔ Getting the correct version of 10 packages
+    Configuring Storybook ESLint plugin at .eslintrc.cjs
+  ✔ Installing Storybook dependencies
+. ✓
+Installing dependencies...
+
+Scope: all 5 workspace projects
+Done in 641ms
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Storybook was successfully installed in your project! 🎉                   │
+│   To run Storybook manually, run pnpm run storybook. CTRL+C to stop.         │
+│                                                                              │
+│   Wanna know more about Storybook? Check out https://storybook.js.org/       │
+│   Having trouble or want to chat? Join us at https://discord.gg/storybook/   │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Running Storybook
+
+> @repo/ui@0.0.0 storybook /Users/cge/dev3/test-sveltekit-storybook/packages/ui
+> storybook dev -p 6006 "--quiet"
+
+/Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-locate/index.js:2
+const pLimit = require('p-limit');
+               ^
+
+Error [ERR_REQUIRE_ESM]: require() of ES Module /Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-limit/index.js from /Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-locate/index.js not supported.
+Instead change the require of /Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-limit/index.js in /Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-locate/index.js to a dynamic import() which is available in all CommonJS modules.
+    at Object.<anonymous> (/Users/cge/dev3/test-sveltekit-storybook/node_modules/.pnpm/node_modules/p-locate/index.js:2:16) {
+  code: 'ERR_REQUIRE_ESM'
+}
+
+Node.js v20.14.0
+ ELIFECYCLE  Command failed with exit code 7.

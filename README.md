@@ -1,32 +1,23 @@
-# Turborepo Svelte starter
+# test-sveltekit-storybook
 
-This is an official starter Turborepo.
+Created with
 
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-svelte
+```bash
+pnpm dlx create-turbo@latest -e with-svelte test-sveltekit-storybook # choose pnpm
 ```
 
-## What's inside?
+> Manually added a `.gitignore` file too.
 
-This Turborepo includes the following packages/apps:
+## Reproduce error
 
-### Apps and Packages
+```bash
+cd test-sveltekit-storybook/packages/ui
+pnpm dlx storybook init  # choose Vite
+```
 
-- `docs`: a [svelte-kit](https://kit.svelte.dev/) app
-- `web`: another [svelte-kit](https://kit.svelte.dev/) app
-- `ui`: a stub Svelte component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-plugin-svelte` and `eslint-config-prettier`)
+The error output produced can be seen [here](./storybook-init-error.txt)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Stack
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- `pnpm -v` : `9.4.0`
+- `node -v` : `v20.14.0`
